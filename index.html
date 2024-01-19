@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="form1">
+        <h1>JavaScript Form Validation</h1>
+        <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formdesign" id="name">
+                Full Name: <input type="text" name="fname" placeholder="Enter the name" required><b><span
+                        class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="email">
+                Email: <input type="email" name="femail" placeholder="abc@" required><b><span class="formerror">
+                    </span></b>
+            </div>
+
+            <div class="formdesign" id="phone">
+                Phone: <input type="phone" name="fphone" placeholder="Phone Number" required><b><span
+                        class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="pass">
+                Password: <input type="password" name="fpass" placeholder="Password" required><b><span
+                        class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="cpass">
+                Confirm Password: <input type="password" name="fcpass" placeholder="Confirm Password" required><b><span
+                        class="formerror"></span></b>
+            </div>
+            <div class="submit" id="submit"></div>
+                <input class="but" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
